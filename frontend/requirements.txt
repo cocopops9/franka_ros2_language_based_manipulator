@@ -1,0 +1,7 @@
+# Voice Commander dependencies
+# (Uses hmi_pkg modules for ASR, NLU, VAD, ROS bridge)
+
+pyaudio>=0.2.11
+
+# Note: Other dependencies (openai, etc.) are provided by hmi_pkg
+# Install portaudio on Ubuntu/Debian: sudo apt-get install portaudio19-dev
