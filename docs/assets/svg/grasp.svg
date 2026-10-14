@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-labelledby="title desc">
+<title id="title">Grasp tolerance</title>
+<desc id="desc">Animated gripper closing on objects of different widths and the tolerance band of the grasp goal.</desc>
+<defs>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+    <path d="M24 0H0V24" fill="none" stroke="#16213a" stroke-width="1"/>
+  </pattern>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<style>
+  .t { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; fill: #e6edf3; }
+  .s { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; fill: #9aabc8; }
+  .d { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; fill: #5d6d8a; }
+  .m { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace; fill: #e6edf3; }
+  .ms { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace; fill: #9aabc8; }
+  .b { font-weight: 700; }
+  .card { fill: #111a2e; stroke: #26344f; stroke-width: 1.2; }
+  
+</style>
+<rect width="1200" height="400" rx="18" fill="#0b1220"/>
+<rect width="1200" height="400" rx="18" fill="url(#grid)" opacity="0.55"/>
+<text class="t b" x="40" y="46" font-size="22">Grasp goal and its tolerance</text>
+<text class="s" x="40" y="70" font-size="14">grasp_object(): width 0.04 m, epsilon inner/outer 0.05 m, force 40 N, speed 0.1 m/s. Success means -0.01 m &lt; d &lt; 0.09 m.</text>
+<rect x="140" y="110" width="320" height="30" rx="8" fill="#cfd8e6"/>
+<rect x="270" y="70" width="60" height="42" rx="8" fill="#2b3550"/>
+<g transform="translate(300 150)"><g><animateTransform attributeName="transform" type="translate" values="-104.0,0;-104.0,0;-32.5,0;-32.5,0;-104.0,0;-104.0,0;-104.0,0;-84.5,0;-84.5,0;-104.0,0;-104.0,0;-104.0,0;-0.0,0;-0.0,0;-104.0,0" keyTimes="0.0000;0.0593;0.1481;0.2667;0.3326;0.3333;0.3926;0.4815;0.6000;0.6659;0.6667;0.7259;0.8148;0.9333;1.0000" dur="13.5s" repeatCount="indefinite"/><rect x="-16" y="-12" width="16" height="96" rx="4" fill="#e8edf5"/></g></g>
+<g transform="translate(300 150)"><g><animateTransform attributeName="transform" type="translate" values="104.0,0;104.0,0;32.5,0;32.5,0;104.0,0;104.0,0;104.0,0;84.5,0;84.5,0;104.0,0;104.0,0;104.0,0;0.0,0;0.0,0;104.0,0" keyTimes="0.0000;0.0593;0.1481;0.2667;0.3326;0.3333;0.3926;0.4815;0.6000;0.6659;0.6667;0.7259;0.8148;0.9333;1.0000" dur="13.5s" repeatCount="indefinite"/><rect x="0" y="-12" width="16" height="96" rx="4" fill="#e8edf5"/></g></g>
+<g opacity="0"><animate attributeName="opacity" values="1;0" keyTimes="0.00000;0.33333" dur="13.500s" calcMode="discrete" repeatCount="indefinite"/><rect x="267.5" y="170" width="65.0" height="110" rx="6" fill="#f59e0b" opacity="0.85"/><text class="t b" x="300" y="320" font-size="15" text-anchor="middle">object 25 mm</text><text class="m" x="300" y="344" font-size="12.5" text-anchor="middle">fingers stop at d = 0.025 m</text><g opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0.00000;0.15556;0.33333" dur="13.500s" calcMode="discrete" repeatCount="indefinite"/><text class="m b" x="300" y="368" font-size="13" text-anchor="middle" style="fill:#4ade80">SUCCEEDED: &quot;Grasp Successful.&quot;</text></g></g>
+<g opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0.00000;0.33333;0.66667" dur="13.500s" calcMode="discrete" repeatCount="indefinite"/><rect x="215.5" y="170" width="169.0" height="110" rx="6" fill="#f59e0b" opacity="0.85"/><text class="t b" x="300" y="320" font-size="15" text-anchor="middle">object 65 mm</text><text class="m" x="300" y="344" font-size="12.5" text-anchor="middle">fingers stop at d = 0.065 m</text><g opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0.00000;0.48889;0.66667" dur="13.500s" calcMode="discrete" repeatCount="indefinite"/><text class="m b" x="300" y="368" font-size="13" text-anchor="middle" style="fill:#4ade80">SUCCEEDED: &quot;Grasp Successful.&quot;</text></g></g>
+<g opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0.00000;0.66667" dur="13.500s" calcMode="discrete" repeatCount="indefinite"/><text class="t b" x="300" y="320" font-size="15" text-anchor="middle">no object</text><text class="m" x="300" y="344" font-size="12.5" text-anchor="middle">fingers stop at d = 0.000 m</text><g opacity="0"><animate attributeName="opacity" values="0;1" keyTimes="0.00000;0.82222" dur="13.500s" calcMode="discrete" repeatCount="indefinite"/><text class="m b" x="300" y="368" font-size="13" text-anchor="middle" style="fill:#4ade80">SUCCEEDED: &quot;Grasp Successful.&quot;</text></g></g>
+<rect x="682.5" y="184" width="425.0" height="52" rx="8" fill="#4ade80" opacity="0.13"/>
+<text class="m" x="682.5" y="176" font-size="11.5" style="fill:#4ade80">reported as success: (-0.01, 0.09)</text>
+<rect x="725.0" y="206" width="340.0" height="8" rx="4" fill="#cfd8e6" opacity="0.5"/>
+<text class="s" x="725.0" y="254" font-size="11.5">finger travel 0 ... 0.08 m (open_gripper width)</text>
+<line x1="640" y1="210" x2="1150" y2="210" stroke="#5d6d8a"/>
+<line x1="640.0" y1="204" x2="640.0" y2="216" stroke="#5d6d8a"/><text class="d" x="640.0" y="232" font-size="11" text-anchor="middle">-0.02</text>
+<line x1="725.0" y1="204" x2="725.0" y2="216" stroke="#5d6d8a"/><text class="d" x="725.0" y="232" font-size="11" text-anchor="middle">0.00</text>
+<line x1="810.0" y1="204" x2="810.0" y2="216" stroke="#5d6d8a"/><text class="d" x="810.0" y="232" font-size="11" text-anchor="middle">0.02</text>
+<line x1="895.0" y1="204" x2="895.0" y2="216" stroke="#5d6d8a"/><text class="d" x="895.0" y="232" font-size="11" text-anchor="middle">0.04</text>
+<line x1="980.0" y1="204" x2="980.0" y2="216" stroke="#5d6d8a"/><text class="d" x="980.0" y="232" font-size="11" text-anchor="middle">0.06</text>
+<line x1="1065.0" y1="204" x2="1065.0" y2="216" stroke="#5d6d8a"/><text class="d" x="1065.0" y="232" font-size="11" text-anchor="middle">0.08</text>
+<line x1="1150.0" y1="204" x2="1150.0" y2="216" stroke="#5d6d8a"/><text class="d" x="1150.0" y="232" font-size="11" text-anchor="middle">0.10</text>
+<line x1="895.0" y1="180" x2="895.0" y2="240" stroke="#f59e0b" stroke-width="2"/><text class="m" x="895.0" y="160" font-size="11.5" text-anchor="middle" style="fill:#f59e0b">goal width 0.04</text>
+<g><animateTransform attributeName="transform" type="translate" values="1065.0,210;1065.0,210;831.2,210;831.2,210;1065.0,210;1065.0,210;1065.0,210;1001.2,210;1001.2,210;1065.0,210;1065.0,210;1065.0,210;725.0,210;725.0,210;1065.0,210" keyTimes="0.0000;0.0593;0.1481;0.2667;0.3326;0.3333;0.3926;0.4815;0.6000;0.6659;0.6667;0.7259;0.8148;0.9333;1.0000" dur="13.5s" repeatCount="indefinite"/><path d="M0 -12L7 -24L-7 -24Z" fill="#ffffff"/><text class="m" x="0" y="-30" font-size="11" text-anchor="middle">d</text></g>
+<text class="s" x="640" y="294" font-size="13">Because 0.04 - 0.05 &lt; 0, fingers that close on nothing also pass the test.</text>
+<text class="s" x="640" y="314" font-size="13">The action then succeeds and the arm carries an empty gripper to the</text>
+<text class="s" x="640" y="334" font-size="13">release zone, where it waits for "release" as usual.</text>
+<text class="d" x="640" y="358" font-size="12">Rule from libfranka Gripper::grasp(): width - epsilon_inner &lt; d &lt; width + epsilon_outer.</text>
+</svg>

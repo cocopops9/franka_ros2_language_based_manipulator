@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dum-E Guided Tour</title>
+  <meta name="description" content="Interactive documentation of Dum-E, a voice-guided Franka FR3 that hands over tools: perception, frames, voice interface and motion, with live labs.">
+  <link rel="icon" href="assets/svg/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="icon-btn" id="menu-btn" aria-label="Show chapters">Chapters</button>
+    <a class="brand" href="#/">
+      <span class="brand-mark">D</span>
+      <span>Dum-E <small>guided tour</small></span>
+    </a>
+    <span class="spacer"></span>
+    <button class="icon-btn" id="theme-btn" aria-label="Toggle colour theme">Theme</button>
+    <a class="icon-btn" id="repo-btn" href="https://github.com/cocopops9/franka_ros2_language_based_manipulator">Repository</a>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar" aria-label="Chapters">
+      <h2>Reading path</h2>
+      <ol class="steps" id="steps"></ol>
+      <p class="meta">Every lab runs a port of the project code that <a href="#/README">docs/tools/check_parity.py</a> checks against the original modules.</p>
+    </nav>
+    <main class="content" id="content">
+      <article class="article" id="article"><p class="loading">Loading...</p></article>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

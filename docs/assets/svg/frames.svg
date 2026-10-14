@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-labelledby="title desc">
+<title id="title">Coordinate frames</title>
+<desc id="desc">Robot base frame, calibrated camera frame, calibration marker and an example object ray.</desc>
+<defs>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+    <path d="M24 0H0V24" fill="none" stroke="#16213a" stroke-width="1"/>
+  </pattern>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<style>
+  .t { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; fill: #e6edf3; }
+  .s { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; fill: #9aabc8; }
+  .d { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; fill: #5d6d8a; }
+  .m { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace; fill: #e6edf3; }
+  .ms { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace; fill: #9aabc8; }
+  .b { font-weight: 700; }
+  .card { fill: #111a2e; stroke: #26344f; stroke-width: 1.2; }
+  
+</style>
+<rect width="1200" height="520" rx="18" fill="#0b1220"/>
+<rect width="1200" height="520" rx="18" fill="url(#grid)" opacity="0.55"/>
+<text class="t b" x="40" y="46" font-size="22">Frames: fr3_link0, camera_link and the calibration marker</text>
+<text class="s" x="40" y="70" font-size="14">Side view looking along -x (robot y to the right, z up). Camera pose = static transform in move_robot.launch.py.</text>
+<rect x="82" y="385" width="452" height="14" fill="#1a2438"/>
+<text class="d" x="88" y="417" font-size="12">table, z = -0.075 m (height of the calibration marker)</text>
+<rect x="308" y="160" width="44" height="200" rx="16" fill="#1f2a44" stroke="#26344f"/>
+<rect x="290" y="356" width="80" height="29" rx="4" fill="#253255"/>
+<defs><marker id="ar-f87171" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#f87171"/></marker><marker id="ar-4ade80" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4ade80"/></marker><marker id="ar-60a5fa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#60a5fa"/></marker><marker id="ar-22d3ee" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#22d3ee"/></marker><marker id="ar-f59e0b" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#f59e0b"/></marker></defs>
+<line x1="330.0" y1="360.0" x2="400.0" y2="360.0" stroke="#4ade80" stroke-width="3" marker-end="url(#ar-4ade80)"/><text class="m b" x="410.0" y="364.0" font-size="13" style="fill:#4ade80">y</text>
+<line x1="330.0" y1="360.0" x2="330.0" y2="290.0" stroke="#60a5fa" stroke-width="3" marker-end="url(#ar-60a5fa)"/><text class="m b" x="326.0" y="280.0" font-size="13" style="fill:#60a5fa">z</text>
+<circle cx="330.0" cy="360.0" r="7" fill="none" stroke="#f87171" stroke-width="2"/><circle cx="330.0" cy="360.0" r="2" fill="#f87171"/>
+<text class="m b" x="304.0" y="382.0" font-size="13" style="fill:#f87171">x</text>
+<text class="t b" x="218.0" y="352.0" font-size="13">fr3_link0</text>
+<rect x="454.7" y="117.0" width="52" height="24" rx="6" fill="#1b2742" stroke="#22d3ee" transform="rotate(212.2 480.7 129.0)"/>
+<line x1="480.7" y1="129.0" x2="134.3" y2="384.8" stroke="#22d3ee" stroke-opacity="0.35" stroke-dasharray="5 5"/>
+<line x1="480.7" y1="129.0" x2="431.3" y2="384.8" stroke="#22d3ee" stroke-opacity="0.35" stroke-dasharray="5 5"/>
+<line x1="480.7" y1="129.0" x2="319.4" y2="384.8" stroke="#22d3ee" stroke-opacity="0.6"/>
+<line x1="480.7" y1="129.0" x2="438.0" y2="196.7" stroke="#22d3ee" stroke-width="3" marker-end="url(#ar-22d3ee)"/><text class="m b" x="426.5" y="212.5" font-size="13" style="fill:#22d3ee">z_c</text>
+<line x1="480.7" y1="129.0" x2="527.2" y2="158.4" stroke="#4ade80" stroke-width="3" marker-end="url(#ar-4ade80)"/><text class="m b" x="535.0" y="169.9" font-size="13" style="fill:#4ade80">y_c</text>
+<circle cx="480.7" cy="129.0" r="7" fill="none" stroke="#f87171" stroke-width="2"/><path d="M476.7 125.0L484.7 133.0M484.7 125.0L476.7 133.0" stroke="#f87171" stroke-width="1.6"/>
+<text class="t b" x="496.7" y="111.0" font-size="13">camera_link</text>
+<text class="ms" x="496.7" y="127.0" font-size="11">x_c points along -x of the base</text>
+<rect x="321.0" y="379.8" width="18" height="5" fill="#ffffff"/>
+<text class="s" x="210.0" y="432.8" font-size="12">calibration marker ID 0 at (0.30, 0.00, -0.075), 15 mm</text>
+<circle cx="396.0" cy="383.1" r="6" fill="#f59e0b"/>
+<line x1="480.7" y1="129.0" x2="396.0" y2="383.1" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6 6"><animate attributeName="stroke-dashoffset" values="24;0" dur="1s" repeatCount="indefinite"/></line>
+<text class="m b" x="406.0" y="401.1" font-size="12" style="fill:#f59e0b">fork</text>
+<text class="t b" x="60" y="187.1" font-size="13">example object (fork)</text>
+<text class="m" x="60" y="207.1" font-size="12" style="fill:#f59e0b">p_cam  = (-0.073, 0.193, 0.789)</text>
+<text class="m" x="60" y="225.1" font-size="12" style="fill:#f59e0b">p_base = (0.520, 0.200, -0.070)</text>
+<circle cx="168.3" cy="287.4" r="8" fill="none" stroke="#34d399" stroke-width="2"/>
+<text class="s" x="138.3" y="271.4" font-size="12">release pose (y = -0.49)</text>
+<rect class="card" x="804" y="88" width="372" height="356" rx="12"/>
+<text class="t b" x="820" y="112" font-size="15" style="fill:#e6edf3">Calibration chain (extrinsinc_calibration.py)</text>
+<text class="m" x="820" y="138" font-size="12.5" style="fill:#60a5fa">T_base_cam = T_base_marker * inv(T_cam_marker)</text>
+<text class="s" x="820" y="164" font-size="12" style="fill:#9aabc8">T_cam_marker: cv2.solvePnP on the 4 marker corners</text>
+<text class="s" x="820" y="190" font-size="12" style="fill:#9aabc8">T_base_marker: measured, R = Rz(+90 deg), t = (0.30, 0, -0.075)</text>
+<text class="t b" x="820" y="224" font-size="15" style="fill:#e6edf3">Published static transform</text>
+<text class="m" x="820" y="250" font-size="12.5" style="fill:#22d3ee">t = (0.4427, 0.4566, 0.6999) m</text>
+<text class="m" x="820" y="276" font-size="12.5" style="fill:#22d3ee">q = (-0.0077, 0.9606, -0.2777, 0.0022)</text>
+<text class="s" x="820" y="302" font-size="12" style="fill:#9aabc8">optical axis tilted 32.2 deg from vertical, towards -y</text>
+<text class="s" x="820" y="328" font-size="12" style="fill:#9aabc8">it meets the table at (0.45, -0.03)</text>
+<text class="t b" x="820" y="362" font-size="15" style="fill:#e6edf3">Used at run time</text>
+<text class="m" x="820" y="388" font-size="12.5" style="fill:#f59e0b">p_base = R(q) * p_cam + t</text>
+<text class="m" x="820" y="414" font-size="12" style="fill:#9aabc8">tf_buffer-&gt;transform(point, &quot;fr3_link0&quot;)</text>
+</svg>
